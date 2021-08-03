@@ -10,7 +10,7 @@ module Rewards
   }
 
   def self.to_nokogiri(page)
-    Nokogiri::HTML(page.content.toutf8)
+    Nokogiri::HTML(page.content)
   end
 
   def self.header()
