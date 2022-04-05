@@ -48,5 +48,6 @@ blocks:
           # to be used in next blocks and future workflows:
           - cache store gems-$SEMAPHORE_GIT_BRANCH-$(checksum Gemfile.lock) vendor/bundle
           # copy the secret file to our login folder
+          - mkdir -p lich/data/
           - cp ~/.lich/entry.dat lich/data/
           - bin/login --rewards --login
