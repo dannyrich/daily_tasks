@@ -1,8 +1,16 @@
+Thread.new {
+    while line = get
+        $stdout.write("#{line}")
+    end
+}
+
 10.times do 
   if dothistimeout("info", 3, /Level:/)
+    sleep 2
     $stdout.write(":ok >> #{Char.name}")
     fput("exit") 
   end
+  sleep 1
 end
 
 Thread.main.raise(":err >> unknown result from #{Char.name}")
