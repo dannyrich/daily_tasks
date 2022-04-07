@@ -1,9 +1,3 @@
-Thread.new {
-    while line = get
-        $stdout.write("#{line}")
-    end
-}
-
 10.times do 
   if dothistimeout("info", 3, /Level:/)
     sleep 2
