@@ -16,7 +16,7 @@ blocks:
           commands:
             - checkout
             - 'cache restore gems-$SEMAPHORE_GIT_BRANCH-$(checksum Gemfile.lock),gems-$SEMAPHORE_GIT_BRANCH-,gems-master-'
-            - sem-version ruby 2.7.0
+            - sem-version ruby 3.0.0
             - gem install sqlite3 tty-command mechanize --no-document
             - cache store gems-$SEMAPHORE_GIT_BRANCH-$(checksum Gemfile.lock) vendor/bundle
             - mkdir -p lich/data/
