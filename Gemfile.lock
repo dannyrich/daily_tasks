@@ -9,6 +9,7 @@ GEM
     tty-color (0.4.3)
     tty-command (0.8.2)
       pastel (~> 0.7.0)
+    terminal-table (3.0.2)
 
 PLATFORMS
   ruby
@@ -16,6 +17,7 @@ PLATFORMS
 DEPENDENCIES
   sqlite3 (~> 1.4)
   tty-command
+  terminal-table
 
 BUNDLED WITH
    1.16.3
