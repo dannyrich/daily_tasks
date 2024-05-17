@@ -20,5 +20,10 @@ blocks:
             - gem install ascii_charts concurrent-ruby curses gtk3 sequel sqlite3 terminal-table tomlib tty-command mechanize --no-document
             - cache store gems-$SEMAPHORE_GIT_BRANCH-$(checksum Gemfile.lock) vendor/bundle
             - mkdir -p lich/data/
+            - mkdir -p lich/temp/
+            - mkdir -p lich/lib/
+            - mkdir -p lich/maps/
+            - mkdir -p lich/logs/
+            - mkdir -p lich/backup/
             - cp ~/.lich/entry.dat lich/data/
             - bin/login --rewards --login
